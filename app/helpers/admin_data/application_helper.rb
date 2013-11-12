@@ -66,7 +66,7 @@ module AdminData
       output = []
       if params[:base]
         label = params[:base].camelize + ' ID ' + params[:model_id]
-        output << link_to(label, admin_data_path(:klass => params[:base], :id => params[:model_id]))
+        output << link_to(label, show_path(:klass => params[:base], :id => params[:model_id]))
         output << 'has'
         output << pluralize(total_num_of_children, params[:klass])
 
@@ -93,7 +93,7 @@ module AdminData
         begin
           label = ho
           if model.send(ho)
-            output << link_to(label, admin_data_path(:klass => ho.underscore, :id => model.send(ho)))
+            output << link_to(label, show_path(:klass => ho.underscore, :id => model.send(ho)))
           else
             output << label
           end
@@ -130,7 +130,7 @@ module AdminData
         begin
           output = assoc_name
           if belongs_to_record = model.send(assoc_name)
-            output = link_to(assoc_name, admin_data_path(:klass => belongs_to_record.class.name.underscore, :id => belongs_to_record.id))
+            output = link_to(assoc_name, show_path(:klass => belongs_to_record.class.name.underscore, :id => belongs_to_record.id))
           end
         rescue => e
           Rails.logger.info Util.exception_info(e)

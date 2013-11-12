@@ -6,9 +6,9 @@ AdminData::Engine.routes.draw do
     match '/klass/:klass/new',      to: :new,              :as => :new,     :via => :get
     match '/klass/:klass/:id/del',  to: :del,              :as => :del,     :via => :delete
     match '/klass/:klass/:id/edit', to: :edit,             :as => :edit,    :via => :get
-    match '/klass/:klass/:id',      to: :show,             :via => :get
-    match '/klass/:klass/:id',      to: :update,           :via => :put
-    match '/klass/:klass/:id',      to: :destroy,          :via => :delete
+    match '/klass/:klass/:id',      to: :show,             :as => :show,    :via => :get
+    match '/klass/:klass/:id',      to: :update,           :as => :update,  :via => :put
+    match '/klass/:klass/:id',      to: :destroy,          :as => :delete,    :via => :delete
   end
 
   controller "migration" do

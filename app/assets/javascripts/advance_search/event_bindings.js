@@ -52,10 +52,10 @@ AdminData.bindings = {
 	}
 };
 
-$('.pagination a').live('click', function(e) {
-	AdminData.bindings.pagination_click(e);
-	return false;
-});
+// $('.pagination a').live('click', function(e) {
+//   AdminData.bindings.pagination_click(e);
+//   return false;
+// });
 
 $('#advance_search_table a.add_row_link').live('click', function() {
 	$('#advance_search_table').append(AdminData.advanceSearch.buildRow());
