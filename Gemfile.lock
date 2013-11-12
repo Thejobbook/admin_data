@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    admin_data (1.3.0a)
+    the_jobbook_admin_data (1.3.0a)
       rails (~> 3.1)
       will_paginate (>= 3.0.0)
 
@@ -115,7 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  admin_data!
   guard-test
   jquery-rails
   sqlite3
+  the_jobbook_admin_data!
