@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "admin_data/version"
 
 Gem::Specification.new do |s|
-  s.name        = "admin_data"
+  s.name        = "the_jobbook_admin_data"
   s.version     = AdminData::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Noah Chaimowicz"]
