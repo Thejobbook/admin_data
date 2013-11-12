@@ -6,13 +6,13 @@ Gem::Specification.new do |s|
   s.name        = "admin_data"
   s.version     = AdminData::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Neeraj Singh"]
-  s.email       = ["neeraj@BigBinary.com"]
+  s.authors     = ["Noah Chaimowicz"]
+  s.email       = ["noah@jobbook.com"]
   s.homepage    = ""
   s.summary     = %q{Manage data as if you own it}
   s.description = %q{Manage data as if you own it}
 
-  s.rubyforge_project = "admin_data"
+  s.rubyforge_project = "thejobbook_admin_data"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test}/*`.split("\n")
